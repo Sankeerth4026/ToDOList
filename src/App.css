@@ -1,0 +1,96 @@
+input[type="text"] {
+    height: 40px;
+    width: 500px;
+    border: 2px solid rgba(255, 255, 255, 0.644);
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    padding-left: 10px;
+}
+input[type="checkbox"] {
+    appearance: none; /* Remove the default checkbox */
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: red; /* Background color when checked */
+    border-color: rgba(255, 255, 255, 0.59);
+}
+
+input[type="checkbox"]:checked::before {
+    content: '✓'; /* Checkmark */
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    line-height: 20px; /* Center the checkmark */
+}
+.add {
+    height: 45px;
+    width: 75px;
+    color: black;
+    background-color: red;
+    font-size: medium;
+    border: 2px solid rgba(255, 255, 255, 0.59);
+    border-radius: 6px; 
+    margin-left: 10px;
+}
+
+.adding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding-top: 10px;
+}
+
+.task-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 600px; 
+}
+
+.taskk {
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+    flex-grow: 1;
+    font-size: 25px; 
+}
+
+.taskk.checked {
+    text-decoration: line-through;
+    color: rgba(255, 255, 255, 0.449);
+    
+}
+
+.check {
+    margin-right: 10px;
+    
+}
+.Schd{
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    text-decoration: underline ;
+    background-color: red;
+    
+}
